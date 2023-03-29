@@ -1,0 +1,28 @@
+{
+  "name": "TennisApp",
+  "version": "1.0.0",
+  "description": "The tennis calculator takes a set of scores as inputs and produces useful statistics based on those scores.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest --verbose",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run lint && npm run build && node build/index.js",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.10",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint": "^8.36.0",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.7",
+    "rimraf": "^4.4.1",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  }
+}
